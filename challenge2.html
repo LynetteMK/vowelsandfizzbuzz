@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/challenge2.css">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title"> Pizza Hub Survey Form</h1>
+    <div id="form-outer">
+      <p id="description">
+       Here at Pizza hub we that believe serving food is not enough. We need to measure up to our customers' expectations. Kindly fill out this form to help us improve your experience with us.
+      </p>
+      <form id="survey-form">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">* Age: </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="tel contact" id="number" min="10" max="10" class="input-field" placeholder="Age">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="customerfreq">In a month, how often do you visit Pizza Hub?</label>
+          </div>
+          <div class="rightTab">
+
+            <select id="dropdown" name="customerfreq" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option  value="first">This is my first time here?</option>
+          <option value="once">Once or Twice</option>
+          <option value="three">More thann three times</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">*Would you recommend Pizza Hub to a friend or relative?</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="most-like">What do you like most about the food we serve: </label>
+          </div>
+          <div class="rightTab">
+            <select id="most-like" name="mostLike" class="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="taste">Taste of the food</option>
+          <option value="ingredients">Quality of ingredients</option>
+          <option value="temp">Food temperature</option>
+          <option value="openSource">Open Source</option>
+        </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+          </div>
+          <div class="rightTab">
+            <ul id="preferences" style="list-style: none;">
+              <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Overall ambience</label></li>
+              <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Food service speed</li>
+              <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Taste of food</label></li>
+              <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Quality of ingredients</label></li>
+              <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Food temperature</label></li>
+              <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Music</label></li>
+              <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Restaurant cleanliness</label></li>
+              <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Rest-room cleanliness</label></li>
+             </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="comments">Do you have any comments or suggestions?</label>
+          </div>
+          <div class="rightTab">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
